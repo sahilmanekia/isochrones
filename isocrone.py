@@ -100,7 +100,7 @@ def findDist(lat, lon, angle, drivetime=10, tolerance = .9, maxits = 10):
     
     # variable to hold the drive distance to the lower point
     lowerbound = 0
-    distance = drivetime*.2
+    distance = drivetime*.3
     
     # these next lines create the upper bound lat and lon using the crude_distance
     # function and then store this upper bound in a data frame
@@ -133,7 +133,7 @@ def findDist(lat, lon, angle, drivetime=10, tolerance = .9, maxits = 10):
     while abs(drivetime - calc) > tolerance and iteration < maxits:
                
         #change search radius based on current drivetime versus desired time
-        alpha = 1-(abs(drivetime - calc)/100)**.2
+        alpha = 1-(abs(drivetime - calc)/100)**.3
         distance = distance * alpha
         
         #use crude_distance to get lat/lon for new destiantion coordinates
