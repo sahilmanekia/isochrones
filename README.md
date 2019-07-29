@@ -16,7 +16,7 @@ the number of minutes that a test point can be away from duration to be consider
 ### maxits [default 10]
 the number of iterations to try to get to an acceptable solution. 
 ### alpha
-a learning rate that changes how much the size of each step in the algorthm. The closer the current distance, the smaller the step
+a learning rate that changesthe size of each step in the algorithm. The closer the current distance, the smaller the step
 
 # dependencies
 ### Python packages
